@@ -1,0 +1,23 @@
+Slip13
+Write user defined functions to reverse the case of a given string and call the function using MAP
+object map
+{
+    def LowerCase(m1:String):String = 
+    {
+        m1.toLowerCase();
+    }
+    def UpperCase(m1:String):String = 
+    {
+        m1.toUpperCase()
+    }
+    def main(args:Array[String])
+    {
+        val str = List("Om","SAI");
+        val newCollection = str.map(LowerCase);
+        println(newCollection);
+        
+        val str1 = List("RAm","shAM");
+        val newCollection1 = str1.map(UpperCase);
+        println(newCollection1);
+    }
+}
