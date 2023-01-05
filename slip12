@@ -1,0 +1,14 @@
+Slip12
+Write a program to create a list of 1 to 100 numbers. Create second list from first list selecting numbers which are perfect square. Display it.
+import java.io._
+import scala.collection.mutable.ListBuffer
+object List
+{
+    def main(args: Array[String])
+    {
+        val list1 = List.range(1,100)
+        val list2 = List.tabulate(10)(a=>a*a)
+        println(list1)
+        println(list2)
+    }
+}
