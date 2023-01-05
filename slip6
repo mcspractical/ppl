@@ -1,0 +1,18 @@
+slip6
+Write a program to merge two sets of integers and calculate sum of all integers in the merged set. Also display largest and smallest element from merged set.
+object setmerge 
+
+{
+    def main(args: Array[String]) 
+    {
+        val Set1 = Set(5,16,9,20,30);
+        val Set2 = Set(15,3,7)
+        val Set3 = Set1.++(Set2)
+        val sum = Set3.sum
+        val maxElement = Set3.max
+        val minElement = Set3.min
+        println( "Sum of all element in merged set is : " + sum )
+        println( "Maximum element in merged set is: " + maxElement)
+        println( "Minimum element in merged set is: " + minElement)
+    }
+}
