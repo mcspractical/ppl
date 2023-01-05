@@ -1,0 +1,44 @@
+Slip15
+Define a class SavingAccount (accNo, name, balance, minBalance). Define appropriate constructors and operations withdraw(), deposit(), viewBalance(). Create an array of SavingAccount objects and perform operations and display them.
+import scala.io.StdIn._
+class savingAccount(val ano:Int,val name:String,val bal:Int,val minbal:Int)
+{
+var accno:Int=ano
+var n:String=name
+var balance:Int=bal
+var mb:Int=minbal
+def withdrawl()
+{
+println("Enter the withdrawl ammount:")
+var amt=readInt()
+if(amt<balance && mb<balance)
+{
+balance=balance-amt
+}
+else
+{
+println("Insufficient funds")
+}
+}
+def deposite()
+{
+println("Enter the deposite amount")
+var amt=readInt()
+balance=balance+amt
+}
+def viewbalance()
+{
+println("Your balance is"+balance)
+}
+}
+object amount
+{
+def main(args:Array[String])
+{
+var obj=new savingAccount(123,"sham",1200,500)
+obj.withdrawl()
+obj.viewbalance()
+obj.deposite()
+obj.viewbalance()
+}
+}
