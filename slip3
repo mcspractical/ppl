@@ -1,0 +1,68 @@
+slip3-A
+Write a program to read five random numbers and convert it to binary and octal using user defined functions.
+object NumberConv {
+def binaryCon(n : Int) =
+{
+ var i=0
+ var num=n
+ var A=new Array[Int](10)
+ while(num>0)
+ {
+  A(i)=num%2
+  i=i+1
+  num=num/2
+ }
+ println("\nbinary equivalent " )
+ for(j<-i-1 to 0 by -1)
+ print(A(j))
+}
+def octalCon(n:Int)=
+{
+ var i=0
+ var num=n
+ var A=new Array[Int](10)
+ while(num>0)
+ {
+  A(i)=num%8
+  i=i+1
+  num=num/8
+ }
+ println("\n Octal equivalent " )
+ for(j<-i-1 to 0 by -1)
+ print(A(j))
+}
+def main(args: Array[String]) = 
+{
+ println("enter limit")
+ val lim = scala.io.StdIn.readInt();
+ for(i<-1 to lim)
+ {
+    print("\n\tENTER NUMBER:"+i+"-->");
+    val n=scala.io.StdIn.readInt();
+    println("%d".format(n))
+    octalCon(n)
+    binaryCon(n)
+ }
+}
+}
+
+
+Slip3-B
+Write a program to calculate average of all prime numbers between n1 and n2 (take n1 and n2 from user).
+object slip5{  
+    def isPrime(n: Int) = (2 until n) forall (n % _ != 0)
+    def main(args: Array[String]) {
+        var sum:Int=0;
+        print("Enter limit 1:");
+        val n1 = scala.io.StdIn.readInt();
+        print("Enter limit 2:");
+        val n2 = scala.io.StdIn.readInt();
+        for (i <- n1 to n2 ){
+            if (isPrime(i)){
+                sum=sum+i; 
+                println(i)
+            }
+        }
+        println("sum= "+sum);
+    }
+}
