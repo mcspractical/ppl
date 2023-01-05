@@ -1,0 +1,21 @@
+Slip14
+Write a program to create two sets of strings and find common strings between them. Merge sets after removing common strings. Display resultant set. 
+import scala.collection.mutable._ 
+object set  
+{
+    def main(args: Array[String]) 
+    {     
+        var a=Set("om","sham","ram","yash");    
+        var b=Set("sham","suyash","prabhu","ram"); 
+        
+        println("set1 is = "+a)
+        println("set2 is = "+b)
+        
+        val i = a.intersect(b);
+        println("common strings are = " +i);
+        
+        var c = a.++(b);
+        var res = c.--(i);
+        println("Removing common string the result is = "+ res)
+    }
+}
