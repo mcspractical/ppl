@@ -1,0 +1,43 @@
+Slip4
+Create an abstract class Order (id, description). Derive two classes PurchaseOrder and SalesOrder with details of Supplier and Customer. Create object of each PurchaseOrder And SalesOrder. Display the details of all supplier and customers.
+abstract class Order(id:Int, description:String)
+-->
+{ 
+ def  display(); 
+}  
+class PurchaseOrder(id:Int, description:String) extends Order (id, description)
+{
+    var supplier:String = null;
+    def display()
+    {
+        println("Enter supplier name: ");
+        supplier= scala.io.StdIn.readLine();
+        println(" supplier name is : " + supplier);
+        println(" Order Id is : "+ id);
+        println(" Order supplier description is : " +description);
+    }
+    
+}
+class SalesOrder(id:Int, description:String) extends Order (id, description)
+{
+    var customer:String = null;
+    def display()
+    {
+        println("Enter customer name: ");
+        customer= scala.io.StdIn.readLine();
+        println(" Customer name is : " + customer);
+        println(" Order Id is : "+ id);
+        println(" Order description is : " +description);
+    }
+    
+}
+object runclass3 
+{      
+    def main(args: Array[String])
+    {          
+        var p = new PurchaseOrder(203 , "computer") ;       
+        var c = new SalesOrder(305, "Laptop") ;       
+        p.display();        
+        c.display(); 
+    }
+}
