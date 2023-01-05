@@ -1,0 +1,26 @@
+Write a program to create a MAP with empno, empname and deptname. Print details of all employees working in the same department, as “Mr. Joshi”
+->
+object map2
+{
+def main(args:Array[String])
+{
+    val m1: Map[Int,String] = Map(1->"mayuri",2->"ashvini",3->"siddhi");
+fun(m1)
+}
+def fun(m1:Map[Int,String])
+{
+val find=m1(1)
+m1.keys.foreach
+{
+i =>
+  if(find.equals(m1(i)))
+{
+  println(" "+m1(i)+" "+i)
+}
+}
+}
+}
+output:-
+C:\Users\SAI\scala_samples\sbt_proj>scalac map2.scala
+C:\Users\SAI\scala_samples\sbt_proj>scala map2
+ mayuri 1
