@@ -1,5 +1,9 @@
 Slip12
 Write a program to create a list of 1 to 100 numbers. Create second list from first list selecting numbers which are perfect square. Display it.
+
+
+
+
 import java.io._
 import scala.collection.mutable.ListBuffer
 object List
