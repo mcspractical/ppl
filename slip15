@@ -1,5 +1,9 @@
 Slip15
 Define a class SavingAccount (accNo, name, balance, minBalance). Define appropriate constructors and operations withdraw(), deposit(), viewBalance(). Create an array of SavingAccount objects and perform operations and display them.
+
+
+
+
 import scala.io.StdIn._
 class savingAccount(val ano:Int,val name:String,val bal:Int,val minbal:Int)
 {
