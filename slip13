@@ -1,5 +1,9 @@
 Slip13
 Write user defined functions to reverse the case of a given string and call the function using MAP
+
+
+
+
 object map
 {
     def LowerCase(m1:String):String = 
