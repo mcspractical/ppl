@@ -1,5 +1,9 @@
 slip3-A
 Write a program to read five random numbers and convert it to binary and octal using user defined functions.
+
+
+
+
 object NumberConv {
 def binaryCon(n : Int) =
 {
