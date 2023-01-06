@@ -1,5 +1,8 @@
 slip18
 Create array of strings and read a new string from user. Display all the srings from the array that contain the new string
+
+
+
 object string{
     def main(args : Array[String])
     {
