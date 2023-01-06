@@ -1,7 +1,11 @@
 Slip4
 Create an abstract class Order (id, description). Derive two classes PurchaseOrder and SalesOrder with details of Supplier and Customer. Create object of each PurchaseOrder And SalesOrder. Display the details of all supplier and customers.
+
+
+
+
 abstract class Order(id:Int, description:String)
--->
+
 { 
  def  display(); 
 }  
