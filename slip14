@@ -1,5 +1,9 @@
 Slip14
 Write a program to create two sets of strings and find common strings between them. Merge sets after removing common strings. Display resultant set. 
+
+
+
+
 import scala.collection.mutable._ 
 object set  
 {
