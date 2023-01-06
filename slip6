@@ -1,5 +1,8 @@
 slip6
 Write a program to merge two sets of integers and calculate sum of all integers in the merged set. Also display largest and smallest element from merged set.
+
+
+
 object setmerge 
 
 {
